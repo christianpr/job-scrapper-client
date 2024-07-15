@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
 </template>
@@ -24,4 +24,23 @@ export default class App extends Vue {}
   color: #2c3e50;
   margin-top: 60px;
 }
-</style>
+</style> -->
+
+<template>
+  <div id="app">
+    <h1>Scrapper Job Search</h1>
+    <JobSearch />
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import JobSearch from "./components/JobSearch.vue";
+
+export default defineComponent({
+  name: "App",
+  components: {
+    JobSearch,
+  },
+});
+</script>
